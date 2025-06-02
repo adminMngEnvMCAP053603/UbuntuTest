@@ -11,8 +11,8 @@ This repository provides a fully automated shell script to set up and configure 
 ✅ Downloads and configures the Azure DevOps Self-Hosted Linux Agent  
 ✅ Installs the agent as a system service and starts it  
 ✅ Supported Operating Systems  
-  🟢 **Amazon Linux, RHEL, CentOS, and Fedora  **  
-  🟢 ** Ubuntu & Debian**
+  🟢 **Amazon Linux, RHEL, CentOS, and Fedora**  
+  🟢 **Ubuntu & Debian**  
 
 ---
 
