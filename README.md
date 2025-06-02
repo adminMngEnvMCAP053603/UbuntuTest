@@ -6,11 +6,13 @@ This repository provides a fully automated shell script to set up and configure 
 
 ## ✨ Features
 
-✅ Automatically installs required dependencies (.NET SDK 8.0 on Amazon Linux)  
+✅ Automatically update the system and install required dependencies  
 ✅ Creates the Azure DevOps Agent Pool if it does not exist  
-✅ Downloads and configures the DevOps agent  
+✅ Downloads and configures the Azure DevOps Self-Hosted Linux Agent  
 ✅ Installs the agent as a system service and starts it  
-✅ Supports both **Amazon Linux** and **Ubuntu**
+✅ Supported Operating Systems  
+  🟢 **Amazon Linux, RHEL, CentOS, and Fedora  **  
+  🟢 ** Ubuntu & Debian**
 
 ---
 
@@ -60,7 +62,9 @@ chmod +x azure-devops-self-hosted-agent.sh
 <p align="center"> <img src="https://github.com/user-attachments/assets/e998b079-ba60-411f-a417-40e7d4ff72a0" alt="Run Script Screenshot 2" width="600"> </p>
 <p align="center"> <img src="https://github.com/user-attachments/assets/68115e1c-4265-44ae-8cb2-348a306b67e8" alt="Run Script Screenshot 3" width="600"> </p> 
 <p align="center"> <img src="https://github.com/user-attachments/assets/0c8d9028-cc28-4ac2-a9f9-6ef4f3332a3e" alt="Run Script Screenshot 4" width="600"> </p> 
-<p align="center"> <img src="https://github.com/user-attachments/assets/c9a94210-0eb3-44cc-a472-d55f76b60d32" alt="Run Script Screenshot 5" width="600"> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/ace0fc14-0275-48e7-980c-13ca6010029f" alt="Run Script Screenshot 5" width="600"> </p>
+
+
 
 ---
 
