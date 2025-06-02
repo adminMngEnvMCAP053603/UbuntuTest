@@ -11,13 +11,20 @@ AGENT_DOWNLOAD_URL='https://download.agent.dev.azure.com/agent/4.255.0/vsts-agen
 AGENT_NAME="$(grep '^NAME' /etc/os-release | cut -d= -f2 | tr -d '\"' | tr ' ' '-')-$(hostname -I | awk '{print $1}')"
 
 
-# --- System Update & .NET Install (only for Amazon Linux) ---
-if grep -qi "amazon" /etc/os-release; then
-  echo "Amazon Linux detected. Updating system and installing .NET SDK 8.0..."
-  sudo dnf upgrade -y
-  sudo dnf install -y dotnet-sdk-8.0
+# --- System Update & Package Installation Based on OS ---
+if grep -qi "amazon\|rhel\|red hat\|centos\|fedora" /etc/os-release; then
+  echo "Amazon/CentOS/Fedora/RedHat-based system detected. Updating system and installing .NET SDK 8.0..."
+  sudo yum upgrade -y
+  sudo yum install -y dotnet-sdk-8.0
 else
-  echo "Non-Amazon Linux system detected. Skipping .NET installation."
+  if grep -qi "ubuntu\|debian" /etc/os-release; then
+    echo "Ubuntu/Debian-based system detected. Updating system and installing .NET SDK 8.0 and jq..."
+    sudo apt update
+    sudo apt upgrade -y
+    sudo apt install -y jq dotnet-sdk-8.0
+  else
+    echo "Unsupported OS detected. Skipping installation steps."
+  fi
 fi
 
 
