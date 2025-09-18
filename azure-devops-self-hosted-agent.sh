@@ -4,7 +4,7 @@ set -e
 # --- User Configurable Variables ---
 AGENT_POOL="UbuntuAllanTest"          # Replace with your Azure DevOps Pool name
 AZD_ORG_NAME="TestAllanQuiros"      # Replace with your Azure DevOps org name
-AZD_PAT="2fihVxOjxeu1FQQfMaUROIwXxk52tu8ZQEZdq5QVsHQceGIO53a1JQQJ99BIACAAAAAurvaQAAASAZDO2hgV"   # Replace with your secure PAT
+AZD_PAT="D8y8qoWGl8XcWzfydWvl9SX0zIrPIEgAjICwYNKLQYm1af0xak0AJQQJ99BIACAAAAAurvaQAAAGAZDOaGMX"   # Replace with your secure PAT
 INSTALL_PATH="$HOME/.devops-agent"
 AGENT_URL="https://dev.azure.com/$AZD_ORG_NAME"
 AGENT_DOWNLOAD_URL='https://download.agent.dev.azure.com/agent/4.255.0/vsts-agent-linux-x64-4.255.0.tar.gz'
